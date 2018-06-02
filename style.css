@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 1.25em
+}
+
+header {
+  min-height: 100vh;
+  /* or could just have background colour: blue or some shit */
+  background: linear-gradient(to bottom right, orange, blue)
+}
+
+nav {
+  background-color: green;
+  /* position makes nav follow user down */
+  position: fixed;
+  width:100%;
+}
+/* will just exclusively target anchor tags within nav, rather than whole thing which can be a pain with big sites */
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+/*  putting space after nav will target li within nav. Using a comma will target all*/
+nav li {
+  display: inline-block;
+  padding: 1.25em;
+}
+
+nav ul {
+  margin: 0;
+}
+
+header main {
+  padding-top: 3em;
+  text-align: center;
+  font-size:1.25em;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: .5em;
+  /* text shadow - first number is x second is y (across and up/down) */
+  text-shadow: 0 2px 6px red;
+}
+
+header img {
+  padding: 1em;
+}
+
+
+/* Must put a dot in front of article to identify that it's referring to a class */
+.about-me {
+  padding:1em 0;
+  line-height: 1.5;
+  background-color: gray;
+  color: white;
+}
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.projects {
+  padding: 3em 0;
+  background-color: purple;
+}
+
+.projects img {
+  width: 30%;
+  padding: 30px 30px 30px 0;
+}
